@@ -4,4 +4,47 @@ header {
     height: 60px;
     background: #FBFAF9;
     opacity: 0.8;
+    z-index: 100;
+    flex-direction: row;
+    justify-content: space-around;
 }
+.header_logo {
+    position: absolute;
+    width: 165px;
+    height: 30px;
+    left: 150px;
+    top: 15px;
+}
+
+.nav_bar a {
+    text-decoration: none; /*убираем подчеркивание текста ссылок*/
+}
+.nav_bar li {
+    float:left; /*Размещаем список горизонтально для реализации меню*/
+    margin-right:5px; /*Добавляем отступ у пунктов меню*/
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+.nav_bar ul {
+    display: flex;
+    color: #3343E1;
+    list-style: none; /*убираем маркеры списка*/
+    margin: 0; /*убираем отступы*/
+    padding-left: 0; /*убираем отступы*/
+
+}
+
+.nav_bar ul li:nth-child(1) {
+    left: 77px;
+}
+.home_internet {
+    display: none;
+}
+.main_menu li:hover .home_internet
+{display: block;}

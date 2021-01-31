@@ -8,7 +8,7 @@ header {
     flex-direction: row;
     justify-content: space-around;
 }
-.header_logo {
+.header__logo {
     position: absolute;
     width: 165px;
     height: 30px;
@@ -16,10 +16,10 @@ header {
     top: 15px;
 }
 
-.nav_bar a {
+.header__menu a {
     text-decoration: none; /*убираем подчеркивание текста ссылок*/
 }
-.nav_bar li {
+.header__menu-item {
     float:left; /*Размещаем список горизонтально для реализации меню*/
     margin-right:5px; /*Добавляем отступ у пунктов меню*/
     font-style: normal;
@@ -47,4 +47,6 @@ header {
     display: none;
 }
 .main_menu li:hover .home_internet
-{display: block;}
+{display: block;
+justify-content: space-around;}
+

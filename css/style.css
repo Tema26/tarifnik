@@ -1,12 +1,22 @@
 header {
-    position: relative;
-    width: 1440px;
+   display: flex;
+    width: auto;
     height: 60px;
     background: #FBFAF9;
     opacity: 0.8;
-    z-index: 100;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+}
+.header__item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+.header__link {
+    padding: 0 20px;
+    margin: 0 15px;
+    list-style-type: none;
+
 }
 .header__logo {
     position: absolute;
@@ -14,39 +24,6 @@ header {
     height: 30px;
     left: 150px;
     top: 15px;
-}
 
-.header__menu a {
-    text-decoration: none; /*убираем подчеркивание текста ссылок*/
-}
-.header__menu-item {
-    float:left; /*Размещаем список горизонтально для реализации меню*/
-    margin-right:5px; /*Добавляем отступ у пунктов меню*/
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
 
 }
-.nav_bar ul {
-    display: flex;
-    color: #3343E1;
-    list-style: none; /*убираем маркеры списка*/
-    margin: 0; /*убираем отступы*/
-    padding-left: 0; /*убираем отступы*/
-
-}
-
-.nav_bar ul li:nth-child(1) {
-    left: 77px;
-}
-.home_internet {
-    display: none;
-}
-.main_menu li:hover .home_internet
-{display: block;
-justify-content: space-around;}
-

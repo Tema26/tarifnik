@@ -14,8 +14,9 @@ header {
     background-image: url("../src/laptop-desk-macbook-apple-table-floor-99193-pxhere%201.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
-
-
+}
+*, *:before, *:after {
+    box-sizing: border-box;
 }
 .header__item {
     display: flex;
@@ -38,15 +39,15 @@ header {
 }
 
 .header-btn {
-    display: flex;
     width: 165px;
     height: 40px;
-    left: 0px;
-    top: -0.08px;
+    margin-top: auto;
+    margin-bottom: auto;
     background: #3343E1;
     border-radius: 20px;
     color: white;
     justify-content: center;
+    text-align: center;
 }
 
 .input_form {
@@ -58,6 +59,8 @@ header {
     background: #E1F1FF;
     border-radius: 20px;
     margin-top: 40px;
+    text-align: center;
+
 }
 .input_form__text {
     font-family: Open Sans;
@@ -68,5 +71,52 @@ header {
     align-items: center;
     text-align: center;
     padding-top: 25px;
-
+}
+.input_form__radio {
+    display: flex;
+    justify-content: space-evenly;
+}
+.input_form__items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+input[type=text] {
+    padding:10px;
+    margin:10px 0; // add top and bottom margin
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius: 15px;
+    border: 0;
+    width: 470px;
+    height: 30px;
+}
+input[type=number] {
+    padding:10px;
+    margin:10px 0; // add top and bottom margin
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius: 15px;
+    border: 0;
+    width: 470px;
+    height: 30px;
+}
+#text_link {
+    width: 471px;
+    height: 25px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
+.input-btn {
+    width: 200px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    align-content: center;
+    color: #FFFFFF;
+    background: #3343E1;
+    border-radius: 20px;
 }

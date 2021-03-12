@@ -20,15 +20,30 @@
     <div class="input_form__text">
         <p>Заявка на подключение</p>
     </div>
-    <div class="form_radio">
-        <input id="radio-1" type="radio" name="radio" value="1" checked>
-        <label for="radio-1">В квартиру</label>
+    <div class="input_form__radio">
+        <div>
+            <input id="radio-1" type="radio" name="radio" value="1" checked>
+            <label for="radio-1">В квартиру</label>
+        </div>
+        <div>
+            <input id="radio-2" type="radio" name="radio" value="2">
+            <label for="radio-2">В частный дом/офис</label>
+        </div>
     </div>
+    <div class="input_form__items">
+        <div class="input_form__phone">
+            <input type="number" placeholder="Ваш телефон*">
+        </div>
+        <div class="input_form__name">
+            <input type="text" placeholder="Ваше имя">
+        </div>
+        <div class="input_form__address">
+            <input type="text" placeholder="Ваш телефон">
+        </div>
 
-    <div class="form_radio">
-        <input id="radio-2" type="radio" name="radio" value="2">
-        <label for="radio-2">В частный дом/офис</label>
     </div>
+    <p id="text_link">Поля, отмеченные *, обязательны к заполнению</p>
+    <button class="input-btn">Отправить заявку</button>
 </div>
 
 <script src="script/script.js"></script>

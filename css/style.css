@@ -1,15 +1,15 @@
 body {
-    background-image: url("../src/laptop-desk-macbook-apple-table-floor-99193-pxhere%201.png");
-    background-repeat: no-repeat;
+    /*background-image: url("../src/laptop-desk-macbook-apple-table-floor-99193-pxhere%201.png");*/
+    /*background-repeat: no-repeat;*/
     width: auto;
     max-width: 1440px;
     height: auto;
 }
 header {
    display: flex;
-    width: auto;
+    width: 1440px;
     height: 60px;
-    /*background: #FBFAF9;*/
+    background: #FBFAF9;
     justify-content: center;
     background-image: url("../src/laptop-desk-macbook-apple-table-floor-99193-pxhere%201.png");
     background-repeat: no-repeat;
@@ -17,6 +17,10 @@ header {
 }
 *, *:before, *:after {
     box-sizing: border-box;
+}
+.header-menu {
+    display: block;
+    width: 100%;
 }
 .header__item {
     display: flex;

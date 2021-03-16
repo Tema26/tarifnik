@@ -23,7 +23,6 @@ header {
     justify-content: space-around;
     align-items: center;
     height: 60px;
-    background: rgba();
 }
 .header__item {
     display: flex;

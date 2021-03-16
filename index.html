@@ -3,27 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Тарифник</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="#src/style.css">
 </head>
 <body>
-<header>
-
+<header class="header">
     <div class="header-menu">
-        <img class="header__logo" src="src/logo%201.png" alt="">
-        <ul class="header__item">
-            <li class="header__link"><a href="#">Домашний интернет</a></li>
-            <li class="header__link"><a href="#">Интернет и ТВ</a></li>
-            <li class="header__link"><a href="#">Телевидение</a></li>
+        <img class="header-menu__logo" src="img/logo%201.png" alt="">
+        <ul class="header-nav">
+            <li class="header-nav__item><a href="#">Домашний интернет</a></li>
+            <li class="header-nav__item"><a href="#">Интернет и ТВ</a></li>
+            <li class="header-nav__item"><a href="#">Телевидение</a></li>
         </ul>
         <button class="header-btn">8 800 111 11 11</button>
     </div>
-
-    <div class="info">
-        <div class="input_form">
+    <div class="header-form">
+        <div class="header-form__checkbox">
             <div class="input_form__text">
                 <p>Заявка на подключение</p>
             </div>
-            <div class="input_form__radio">
+            <div class="header-form__checkbox">
                 <div>
                     <input id="radio-1" type="radio" name="radio" value="1" checked>
                     <label for="radio-1">В квартиру</label>
@@ -33,32 +31,29 @@
                     <label for="radio-2">В частный дом/офис</label>
                 </div>
             </div>
-            <div class="input_form__items">
-                <div class="input_form__phone">
+            <div class="header-form-inputs">
+                <div class="header-form-inputs__phone">
                     <input type="number" placeholder="Ваш телефон*">
                 </div>
-                <div class="input_form__name">
+                <div class="header-form-inputs__name">
                     <input type="text" placeholder="Ваше имя">
                 </div>
-                <div class="input_form__address">
+                <div class="header-form-inputs__address">
                     <input type="text" placeholder="Адрес подключения">
                 </div>
 
             </div>
             <p id="text_link">Поля, отмеченные *, обязательны к заполнению</p>
-            <button class="input-btn">Отправить заявку</button>
+            <button class="header-form-inputs__btn">Отправить заявку</button>
         </div>
     </div>
 </header>
-
-
-<div class="tariffs">
+<section class="tariffs">
     <h2>Тарифы домашний интернет</h2>
     <div class="tariffs_item">
-
     </div>
-</div>
+</section>
 
-<script src="script/script.js"></script>
+<script src="#src/script.js"></script>
 </body>
 </html>

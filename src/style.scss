@@ -5,7 +5,7 @@ body {
     background-attachment: fixed;
 }
 
-header {
+.header {
     width: 1440px;
     height: 60px;
     background: #FBFAF9;
@@ -49,4 +49,70 @@ header {
         top: 15px;
      }   
     }
+}
+
+.input-form {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 750px;
+    height: 389px;
+    background: #E1F1FF;
+    border-radius: 20px;
+    margin-top: 40px;
+    text-align: center;
+    &__text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    align-items: center;
+    text-align: center;
+    padding-top: 25px; 
+    }
+    &__checkbox {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &-inputs {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    &__btn {
+        width: 200px;
+        height: 40px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 18px;
+        align-content: center;
+        color: #FFFFFF;
+        background: #3343E1;
+        border-radius: 20px;
+    }
+}
+#radio-1, #radio-2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+input[type=text] {
+    padding:10px;
+    margin:10px 0; // add top and bottom margin
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius: 15px;
+    border: 0;
+    width: 470px;
+    height: 30px;
+}
+input[type=number] {
+    padding:10px;
+    margin:10px 0; // add top and bottom margin
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius: 15px;
+    border: 0;
+    width: 470px;
+    height: 30px;
 }

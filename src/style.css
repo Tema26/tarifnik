@@ -5,7 +5,7 @@ body {
   background-attachment: fixed;
 }
 
-header {
+.header {
   width: 1440px;
   height: 60px;
   background: #FBFAF9;
@@ -15,7 +15,7 @@ header {
   background-image: url("bg.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background: rgba(128, 128, 128, 0.3) header -btn;
+  background: rgba(128, 128, 128, 0.3) .header -btn;
   background-width: 165px;
   background-height: 40px;
   background-margin-top: auto;
@@ -27,7 +27,7 @@ header {
   background-text-align: center;
 }
 
-header-menu {
+.header-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,7 +40,7 @@ header-menu {
   height: 60px;
 }
 
-header-menu-nav {
+.header-menu-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,16 +51,106 @@ header-menu-nav {
   padding: 0 20px;
 }
 
-header-menu-nav__item {
+.header-menu-nav__item {
   padding: 0 20px;
   margin: 0 15px;
   list-style-type: none;
 }
 
-header-menu__logo {
+.header-menu__logo {
   width: 165px;
   height: 30px;
   left: 150px;
   top: 15px;
+}
+
+.input-form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 750px;
+  height: 389px;
+  background: #E1F1FF;
+  border-radius: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.input-form__text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.input-form__checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.input-form-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.input-form__btn {
+  width: 200px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #FFFFFF;
+  background: #3343E1;
+  border-radius: 20px;
+}
+
+#radio-1, #radio-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+input[type=text] {
+  padding: 10px;
+  margin: 10px 0;
+  -webkit-box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 15px;
+  border: 0;
+  width: 470px;
+  height: 30px;
+}
+
+input[type=number] {
+  padding: 10px;
+  margin: 10px 0;
+  -webkit-box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 15px;
+  border: 0;
+  width: 470px;
+  height: 30px;
 }
 /*# sourceMappingURL=style.css.map */

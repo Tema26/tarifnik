@@ -3,51 +3,64 @@ body {
     background-image: url("bg.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
+    margin: 0;
 }
 
 .header {
     width: 1440px;
     height: 60px;
-    background: #FBFAF9;
     justify-content: center;
     background-image: url("bg.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background: rgba($color: grey, $alpha: 0.3)
-    &-btn {
-        width: 165px;
-    height: 40px;
-    margin-top: auto;
-    margin-bottom: auto;
-    background: #3343E1;
-    border-radius: 20px;
-    color: white;
-    justify-content: center;
-    text-align: center;
-    }
-    &-menu {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    height: 60px;
-        &-nav {
-            display: flex;
-            align-items: center;
-            text-align: center;
-            padding: 0 20px;
-            &__item {
+    background: rgba($color: #FBFAF9, $alpha: 0.8);
+        &-menu {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        height: 60px;
+            &-nav {
+                display: flex;
+                align-items: center;
+                text-align: center;
                 padding: 0 20px;
-                margin: 0 15px;
-                list-style-type: none;
-            }
+                justify-content: space-around;
+                &__item {
+                    padding: 0 20px;
+                    margin: 0 15px;
+                    list-style-type: none;
+                        &-list {
+                            display: none;
+                            background:rgba($color: #FFFFFF, $alpha: 0.9);
+                            list-style-type: none;
+                        }
+                        &-list:checked {
+                            display: block;
+                            position: relative;
+                            transition: opacity .5s linear;  
+                            transform:translate(0);
+                            opacity: 1;
+                        }
+                }
         }
+        &__btn {
+            width: 165px;
+            height: 40px;
+            margin-top: auto;
+            margin-bottom: auto;
+            background: #3343E1;
+            border-radius: 20px;
+            color: white;
+            justify-content: center;
+            text-align: center;
+        }   
      &__logo {
         width: 165px;
         height: 30px;
         left: 150px;
         top: 15px;
-     }   
+     } 
     }
 }
 
@@ -61,15 +74,15 @@ body {
     border-radius: 20px;
     margin-top: 40px;
     text-align: center;
-    &__text {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 27px;
-    align-items: center;
-    text-align: center;
-    padding-top: 25px; 
+        &__text {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+        align-items: center;
+        text-align: center;
+        padding-top: 25px; 
     }
     &__checkbox {
         display: flex;
@@ -115,4 +128,14 @@ input[type=number] {
     border: 0;
     width: 470px;
     height: 30px;
+}
+#text_link {
+    width: 471px;
+    height: 25px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: justify;
 }

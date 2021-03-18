@@ -10,15 +10,21 @@
     <div class="header-menu">
         <img class="header-menu__logo" src="src/logo 1.png" alt="">
         <ul class="header-menu-nav">
-            <li class="header-menu-nav__item"><a href="#">Домашний интернет</a></li>
+            <li class="header-menu-nav__item"><a href="#">Домашний интернет</a>
+                <ul class="header-menu-nav__item-list">
+                    <li>Для модема</li>
+                    <li>Для дачи и дома</li>
+                    <li>Для смартфона</li>
+                </ul>
+            </li>
             <li class="header-menu-nav__item"><a href="#">Интернет и ТВ</a></li>
             <li class="header-menu-nav__item"><a href="#">Телевидение</a></li>
         </ul>
-        <button class="header-btn">8 800 111 11 11</button>
+        <button class="header-menu__btn">8 800 111 11 11</button>
     </div>
     <div class="input-form">
-        <div class="input-form__checkbox">
-            <div class="input_form__text">
+        <div>
+            <div class="input-form__text">
                 <p>Заявка на подключение</p>
             </div>
             <div class="input-form__checkbox">
@@ -41,18 +47,19 @@
                 <div>
                     <input type="text" placeholder="Адрес подключения">
                 </div>
-
+                <p id="text_link">Поля, отмеченные *, обязательны к заполнению</p>
+                <button class="input-form__btn">Отправить заявку</button>
             </div>
-            <p id="text_link">Поля, отмеченные *, обязательны к заполнению</p>
-            <button class="input-form__btn">Отправить заявку</button>
+            
+            
         </div>
     </div>
 </header>
-<section class="tariffs">
+<!-- <section class="tariffs">
     <h2>Тарифы домашний интернет</h2>
     <div class="tariffs_item">
     </div>
-</section>
+</section> -->
 
 <script src="#src/script.js"></script>
 </body>

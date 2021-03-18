@@ -3,28 +3,19 @@ body {
   background-image: url("bg.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  margin: 0;
 }
 
 .header {
   width: 1440px;
   height: 60px;
-  background: #FBFAF9;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   background-image: url("bg.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background: rgba(128, 128, 128, 0.3) .header -btn;
-  background-width: 165px;
-  background-height: 40px;
-  background-margin-top: auto;
-  background-margin-bottom: auto;
-  background-background: #3343E1;
-  background-border-radius: 20px;
-  background-color: white;
-  background-justify-content: center;
-  background-text-align: center;
+  background: rgba(251, 250, 249, 0.8);
 }
 
 .header-menu {
@@ -49,12 +40,44 @@ body {
           align-items: center;
   text-align: center;
   padding: 0 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .header-menu-nav__item {
   padding: 0 20px;
   margin: 0 15px;
   list-style-type: none;
+}
+
+.header-menu-nav__item-list {
+  display: none;
+  background: rgba(255, 255, 255, 0.9);
+  list-style-type: none;
+}
+
+.header-menu-nav__item-list:checked {
+  display: block;
+  position: relative;
+  -webkit-transition: opacity .5s linear;
+  transition: opacity .5s linear;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  opacity: 1;
+}
+
+.header-menu__btn {
+  width: 165px;
+  height: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background: #3343E1;
+  border-radius: 20px;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 
 .header-menu__logo {
@@ -152,5 +175,16 @@ input[type=number] {
   border: 0;
   width: 470px;
   height: 30px;
+}
+
+#text_link {
+  width: 471px;
+  height: 25px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: justify;
 }
 /*# sourceMappingURL=style.css.map */

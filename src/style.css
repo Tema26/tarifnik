@@ -12,8 +12,13 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 27px;
+}
+
 .header {
-  position: relative;
   height: 100vh;
 }
 
@@ -40,7 +45,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding: 0 20px;
+  height: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -70,10 +75,9 @@ body {
 .header-menu__btn {
   width: 165px;
   height: 40px;
-  margin-top: auto;
-  margin-bottom: auto;
   background: #3343E1;
   border-radius: 20px;
+  border: none;
   color: white;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -82,10 +86,16 @@ body {
 }
 
 .header-menu__logo {
+  background: url(../src/logo.svg) no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 165px;
   height: 30px;
-  left: 150px;
-  top: 15px;
+  cursor: pointer;
 }
 
 .input-form {

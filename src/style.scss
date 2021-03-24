@@ -1,30 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    max-width: 1440px;
-    background-image: url("bg.png");
+    background: url("bg.png") center/cover no-repeat;
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
 }
-
+h1 {
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 27px;
+}
 .header {
-    width: 1440px;
-    height: 60px;
-    justify-content: center;
-    background-image: url("bg.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background: rgba($color: #FBFAF9, $alpha: 0.8);
+    height: 100vh;
         &-menu {
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
-        align-items: center;
-        height: 60px;
+            top: 0;
+            background-color: rgba(255, 255, 255, 0.7);
+            height: 60px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
             &-nav {
                 display: flex;
                 align-items: center;
                 text-align: center;
-                padding: 0 20px;
+                height: 100%;
                 justify-content: space-around;
                 &__item {
                     padding: 0 20px;
@@ -32,27 +36,40 @@ body {
                     list-style-type: none;
                         &-list {
                             display: none;
+<<<<<<< HEAD
                             background:rgba($color: #FFFFFF, $alpha: 0.9);
                             list-style-type: none;
+=======
+                        } 
+                        &-list:active{
+                            display: block;
+                            position: relative;
+                            background:rgba($color: #FFFFFF, $alpha: 0.9);
+                            list-style-type: none;
+                            transition: opacity .5s linear;  
+                            transform:translate(0);
+                            opacity: 1;
+>>>>>>> a8de0fcedcc2615e94cf2890bcc3684534e4eed0
                         }
                 }
         }
         &__btn {
             width: 165px;
             height: 40px;
-            margin-top: auto;
-            margin-bottom: auto;
             background: #3343E1;
             border-radius: 20px;
+            border: none;
             color: white;
             justify-content: center;
             text-align: center;
         }   
      &__logo {
-        width: 165px;
-        height: 30px;
-        left: 150px;
-        top: 15px;
+        background: url(../src/logo.svg) no-repeat;
+        display: flex;
+        justify-content: center;
+            width: 165px;
+            height: 30px;
+            cursor: pointer;
      } 
     }
 }

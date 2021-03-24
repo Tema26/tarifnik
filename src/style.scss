@@ -37,6 +37,10 @@ h1 {
                     list-style-type: none;
                         &-list {
                             display: none;
+<<<<<<< HEAD
+                            background:rgba($color: #FFFFFF, $alpha: 0.9);
+                            list-style-type: none;
+=======
                         } 
                         &-list:active{
                             display: block;
@@ -46,6 +50,7 @@ h1 {
                             transition: opacity .5s linear;  
                             transform:translate(0);
                             opacity: 1;
+>>>>>>> a8de0fcedcc2615e94cf2890bcc3684534e4eed0
                         }
                 }
         }

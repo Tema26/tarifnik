@@ -35,13 +35,6 @@ body {
                             background:rgba($color: #FFFFFF, $alpha: 0.9);
                             list-style-type: none;
                         }
-                        &-list:checked {
-                            display: block;
-                            position: relative;
-                            transition: opacity .5s linear;  
-                            transform:translate(0);
-                            opacity: 1;
-                        }
                 }
         }
         &__btn {

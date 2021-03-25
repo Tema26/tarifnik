@@ -43,15 +43,25 @@ h1 {
                     padding: 0 20px;
                     margin: 0 15px;
                     list-style-type: none;
-                    
-                    &:hover {
-                        text-decoration: none;
-                    }
-                        &-dropdown {
-                            display: none;
-                            background:rgba($color: #FFFFFF, $alpha: 0.9);
-                            list-style-type: none;
+                    &-dropdown {
+                        display: none;
+                        
+                        & li {
+                            display: active;
+                            -webkit-box-orient: vertical;
+                            -webkit-box-direction: normal;
+                                -ms-flex-direction: column;
+                                    flex-direction: column;
+                            text-align: center;
+                            background-color: rgba(255, 255, 255, 0.7);
+                            opacity: 0.9;
+                            border-top: 3px solid #3343E1;
+                            border-radius: 0 0 10px 10px;
+                            padding: 10px 0 10px 0;
+                            position: relative;
                         }
+                    }
+                    
                     }
                 }
                 &__btn {
@@ -79,21 +89,7 @@ h1 {
         }
      
     }
-
-.dropdown {
-    display: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.7);
-    opacity: 0.9;
-    border-top: 3px solid #3343E1;
-    border-radius: 0 0 10px 10px;
-    padding: 10px 0 10px 0;
-}
-
+ 
 .input-form {
     display: block;
     margin-left: auto;

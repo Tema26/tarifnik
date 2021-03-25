@@ -13,7 +13,11 @@ body {
 }
 
 a {
+  border: none;
+  outline: none;
   text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: white;
 }
 
 h1 {

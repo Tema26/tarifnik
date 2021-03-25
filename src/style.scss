@@ -10,7 +10,11 @@ body {
     margin: 0;
 }
 a {
-    text-decoration: none;
+    border:none;
+    outline:none;
+    text-decoration:none;
+    color:inherit;
+    -webkit-tap-highlight-color: white;
 }
 h1 {
     font-weight: 1000;

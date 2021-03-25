@@ -48,6 +48,24 @@ h1 {
                     padding: 0 20px;
                     margin: 0 15px;
                     list-style-type: none;
+                    &__submenu {
+                        display: none;
+                        flex-direction: column;
+                        text-align: center;
+                        background-color: rgba(255, 255, 255, 0.7);
+                        opacity: 0.9;
+                        border-top: 3px solid #3343E1;
+                        border-radius: 0 0 10px 10px;
+                        padding: 10px 0 10px 0;
+                        &_link {
+                            padding: 5px 0 5px 0;
+
+                            &:hover {
+                                background: #3343E1;
+                                color: white;
+                            }
+                        }
+                    }
                 }
         }
         &__btn {
@@ -59,6 +77,8 @@ h1 {
             color: white;
             justify-content: center;
             text-align: center;
+            outline: none;
+            cursor: pointer;
         }   
      &__logo {
         background: url(../src/logo.svg) no-repeat;
@@ -92,7 +112,7 @@ h1 {
     height: 389px;
     background: #E1F1FF;
     border-radius: 20px;
-    margin-top: 40px;
+    margin-top: 100px;
     text-align: center;
     text-align: -webkit-center;
         &__text {
@@ -117,7 +137,7 @@ h1 {
     }
     &__btn {
         display: block;
-        margin: 0 auto;
+        margin-top: 20px;
         border: none;
         outline: none;
         cursor: pointer;
@@ -161,6 +181,6 @@ input[type=number] {
     line-height: 14px;
     display: flex;
     align-items: center;
-    margin-bottom: 13px;
+    margin: 10px 15px;
     width: 470px;
 }

@@ -13,9 +13,10 @@ body {
 }
 
 h1 {
-  font-weight: 900;
-  font-size: 22px;
-  line-height: 27px;
+  font-weight: 1000;
+  font-size: 26px;
+  line-height: 30px;
+  margin-left: 30px;
 }
 
 .header {
@@ -48,6 +49,8 @@ h1 {
   height: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 
 .header-menu-nav__item {
@@ -56,20 +59,14 @@ h1 {
   list-style-type: none;
 }
 
-.header-menu-nav__item-list {
-  display: none;
+.header-menu-nav__item:hover {
+  text-decoration: none;
 }
 
-.header-menu-nav__item-list:active {
-  display: block;
-  position: relative;
+.header-menu-nav__item-dropdown {
+  display: none;
   background: rgba(255, 255, 255, 0.9);
   list-style-type: none;
-  -webkit-transition: opacity .5s linear;
-  transition: opacity .5s linear;
-  -webkit-transform: translate(0);
-          transform: translate(0);
-  opacity: 1;
 }
 
 .header-menu__btn {

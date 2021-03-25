@@ -10,9 +10,10 @@ body {
     margin: 0;
 }
 h1 {
-    font-weight: 900;
-    font-size: 22px;
-    line-height: 27px;
+    font-weight: 1000;
+    font-size: 26px;
+    line-height: 30px;
+    margin-left: 30px;
 }
 .header {
     height: 100vh;
@@ -30,26 +31,19 @@ h1 {
                 text-align: center;
                 height: 100%;
                 justify-content: space-around;
+                text-decoration-line: none;
                 &__item {
                     padding: 0 20px;
                     margin: 0 15px;
                     list-style-type: none;
-                        &-list {
+                    
+                    &:hover {
+                        text-decoration: none;
+                    }
+                        &-dropdown {
                             display: none;
-<<<<<<< HEAD
                             background:rgba($color: #FFFFFF, $alpha: 0.9);
                             list-style-type: none;
-=======
-                        } 
-                        &-list:active{
-                            display: block;
-                            position: relative;
-                            background:rgba($color: #FFFFFF, $alpha: 0.9);
-                            list-style-type: none;
-                            transition: opacity .5s linear;  
-                            transform:translate(0);
-                            opacity: 1;
->>>>>>> a8de0fcedcc2615e94cf2890bcc3684534e4eed0
                         }
                 }
         }

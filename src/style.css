@@ -69,21 +69,22 @@ h1 {
 
 .header-menu-nav__item-dropdown {
   display: none;
+  position: absolute;
+  top: 60px;
+  margin-left: -10px;
+  cursor: pointer;
 }
 
 .header-menu-nav__item-dropdown li {
-  display: active;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  text-align: center;
+  display: block;
   background-color: rgba(255, 255, 255, 0.7);
   opacity: 0.9;
   border-top: 3px solid #3343E1;
+  padding: 10px 25px;
+}
+
+.header-menu-nav__item-dropdown li:last-child {
   border-radius: 0 0 10px 10px;
-  padding: 10px 0 10px 0;
-  position: relative;
 }
 
 .header-menu__btn {
@@ -217,5 +218,9 @@ input[type=number] {
           align-items: center;
   margin: 10px 15px;
   width: 470px;
+}
+
+.opened {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
